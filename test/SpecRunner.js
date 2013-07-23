@@ -313,8 +313,9 @@ define(function (require, exports, module) {
             });
             
             afterEach(function () {
-                // Clean up preferencesKey
+                // Clean up preferencesKey and the preferences themselves
                 localStorage.removeItem("preferencesKey");
+                localStorage.removeItem(SpecRunnerUtils.TEST_PREFERENCES_KEY);
             });
             
             jasmineEnv.updateInterval = 1000;

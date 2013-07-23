@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites>
+<testsuite name="Async PromiseQueue" errors="0" tests="6" failures="0" time="0.086" timestamp="2013-07-23T14:11:34">
+  <testcase classname="Async PromiseQueue" name="should immediately execute a function when the queue is empty" time="0.065"></testcase>
+  <testcase classname="Async PromiseQueue" name="should wait to execute the second added function" time="0.003"></testcase>
+  <testcase classname="Async PromiseQueue" name="should properly handle the case where the first function completes synchronously" time="0.003"></testcase>
+  <testcase classname="Async PromiseQueue" name="should sequentially execute a second and third function if they&apos;re both added while the first is executing" time="0.002"></testcase>
+  <testcase classname="Async PromiseQueue" name="should sequentially execute a second and third function if the third is added while the second is executing" time="0.001"></testcase>
+  <testcase classname="Async PromiseQueue" name="should execute a second function when added to the empty queue after the first function has completed" time="0.001"></testcase>
+</testsuite>
+<testsuite name="CommandManager" errors="0" tests="6" failures="0" time="0.014" timestamp="2013-07-23T14:11:34">
+  <testcase classname="CommandManager" name="register and get a command and validate parameters" time="0.002"></testcase>
+  <testcase classname="CommandManager" name="execute a command" time="0.001"></testcase>
+  <testcase classname="CommandManager" name="not execute a disabled command" time="0.001"></testcase>
+  <testcase classname="CommandManager" name="set enabled state and trigger enabledStateChange" time="0.001"></testcase>
+  <testcase classname="CommandManager" name="set checked state and trigger checkedStateChange" time="0"></testcase>
+  <testcase classname="CommandManager" name="rename command trigger nameChange" time="0.001"></testcase>
+</testsuite>
+<testsuite name="ViewUtils" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:34">
+</testsuite>
+<testsuite name="ViewUtils Scroller Shadows" errors="0" tests="4" failures="0" time="0.028" timestamp="2013-07-23T14:11:34">
+  <testcase classname="ViewUtils Scroller Shadows" name="should not show the top shadow when no scrolling is available" time="0.009"></testcase>
+  <testcase classname="ViewUtils Scroller Shadows" name="should partially reveal the shadow" time="0.007"></testcase>
+  <testcase classname="ViewUtils Scroller Shadows" name="should update shadow position when installed" time="0.004"></testcase>
+  <testcase classname="ViewUtils Scroller Shadows" name="should fully reveal the shadow at the bottommost scroll position" time="0.004"></testcase>
+</testsuite>
+<testsuite name="Native Menus" errors="0" tests="2" failures="0" time="2.754" timestamp="2013-07-23T14:11:34">
+  <testcase classname="Native Menus" name="should have a brackets.app namespace" time="0.029"></testcase>
+  <testcase classname="Native Menus" name="should remove placeholder menu" time="0.122"></testcase>
+</testsuite>
+<testsuite name="Native Menus addMenu" errors="0" tests="2" failures="0" time="0.12" timestamp="2013-07-23T14:11:34">
+  <testcase classname="Native Menus addMenu" name="should add a menu" time="0.083"></testcase>
+  <testcase classname="Native Menus addMenu" name="should return an error if invalid parameters are passed" time="0.035"></testcase>
+</testsuite>
+<testsuite name="Native Menus addMenu (with reference)" errors="0" tests="4" failures="0" time="0.314" timestamp="2013-07-23T14:11:34">
+  <testcase classname="Native Menus addMenu (with reference)" name="should add new menu in last position of list" time="0.063"></testcase>
+  <testcase classname="Native Menus addMenu (with reference)" name="should add new menu after reference menu" time="0.09"></testcase>
+  <testcase classname="Native Menus addMenu (with reference)" name="should add new menu before reference menu" time="0.102"></testcase>
+  <testcase classname="Native Menus addMenu (with reference)" name="should add new menu at end of list when reference menu doesn&apos;t exist" time="0.055"></testcase>
+</testsuite>
+<testsuite name="Native Menus addMenuItem" errors="0" tests="2" failures="0" time="0.096" timestamp="2013-07-23T14:11:35">
+  <testcase classname="Native Menus addMenuItem" name="should add a menu item" time="0.061"></testcase>
+  <testcase classname="Native Menus addMenuItem" name="should return an error if invalid parameters are passed" time="0.033"></testcase>
+</testsuite>
+<testsuite name="Native Menus addMenuItem (with reference)" errors="0" tests="6" failures="0" time="0.813" timestamp="2013-07-23T14:11:35">
+  <testcase classname="Native Menus addMenuItem (with reference)" name="should add a menu item in first position of menu" time="0.113"></testcase>
+  <testcase classname="Native Menus addMenuItem (with reference)" name="should add a menu item in last position of menu" time="0.127"></testcase>
+  <testcase classname="Native Menus addMenuItem (with reference)" name="should add a menu item after the referenced menu item" time="0.107"></testcase>
+  <testcase classname="Native Menus addMenuItem (with reference)" name="should add a menu item before the referenced menu item" time="0.111"></testcase>
+  <testcase classname="Native Menus addMenuItem (with reference)" name="should add a menu item at the end when reference menu item doesn&apos;t exist" time="0.178"></testcase>
+  <testcase classname="Native Menus addMenuItem (with reference)" name="should add menu items to beginning and end of menu section" time="0.169"></testcase>
+</testsuite>
+<testsuite name="Native Menus removeMenu" errors="0" tests="3" failures="0" time="0.064" timestamp="2013-07-23T14:11:36">
+  <testcase classname="Native Menus removeMenu" name="should remove a menu" time="0.034"></testcase>
+  <testcase classname="Native Menus removeMenu" name="should return an error if invalid parameters are passed" time="0.012"></testcase>
+  <testcase classname="Native Menus removeMenu" name="should return an error if the menu can&apos;t be found" time="0.014"></testcase>
+</testsuite>
+<testsuite name="Native Menus removeMenuItem" errors="0" tests="3" failures="0" time="0.133" timestamp="2013-07-23T14:11:36">
+  <testcase classname="Native Menus removeMenuItem" name="should remove a menu item" time="0.042"></testcase>
+  <testcase classname="Native Menus removeMenuItem" name="should return an error if invalid parameters are passed" time="0.035"></testcase>
+  <testcase classname="Native Menus removeMenuItem" name="should return an error if the menu item can&apos;t be found" time="0.052"></testcase>
+</testsuite>
+<testsuite name="Native Menus getMenuItemState setMenuItemState" errors="0" tests="3" failures="0" time="0.533" timestamp="2013-07-23T14:11:36">
+  <testcase classname="Native Menus getMenuItemState setMenuItemState" name="should be able to set enabled state" time="0.056"></testcase>
+  <testcase classname="Native Menus getMenuItemState setMenuItemState" name="should be able to set checked state" time="0.165"></testcase>
+  <testcase classname="Native Menus getMenuItemState setMenuItemState" name="should return an error if invalid parameters are passed" time="0.307"></testcase>
+</testsuite>
+<testsuite name="Native Menus getMenuTitle setMenuTitle" errors="0" tests="3" failures="0" time="0.525" timestamp="2013-07-23T14:11:36">
+  <testcase classname="Native Menus getMenuTitle setMenuTitle" name="should be able to set menu title" time="0.348"></testcase>
+  <testcase classname="Native Menus getMenuTitle setMenuTitle" name="should be able to set menu item title" time="0.137"></testcase>
+  <testcase classname="Native Menus getMenuTitle setMenuTitle" name="should return an error if invalid parameters are passed" time="0.037"></testcase>
+</testsuite>
+<testsuite name="StringMatch" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:37">
+</testsuite>
+<testsuite name="StringMatch findSpecialCharacters" errors="0" tests="1" failures="0" time="0.003" timestamp="2013-07-23T14:11:37">
+  <testcase classname="StringMatch findSpecialCharacters" name="should find the important match characters in the string" time="0.001"></testcase>
+</testsuite>
+<testsuite name="StringMatch _generateMatchList" errors="0" tests="6" failures="0" time="0.11" timestamp="2013-07-23T14:11:37">
+  <testcase classname="StringMatch _generateMatchList" name="should return undefined for no matches" time="0.012"></testcase>
+  <testcase classname="StringMatch _generateMatchList" name="should return an array with specials matches" time="0.003"></testcase>
+  <testcase classname="StringMatch _generateMatchList" name="should try contiguous matches as well, but prefer specials" time="0.001"></testcase>
+  <testcase classname="StringMatch _generateMatchList" name="should handle contiguous matches that stand alone" time="0.003"></testcase>
+  <testcase classname="StringMatch _generateMatchList" name="should recognize non-matches" time="0.002"></testcase>
+  <testcase classname="StringMatch _generateMatchList" name="should backtrack as needed" time="0.08"></testcase>
+</testsuite>
+<testsuite name="StringMatch _lastSegmentSearch" errors="0" tests="4" failures="0" time="0.028" timestamp="2013-07-23T14:11:37">
+  <testcase classname="StringMatch _lastSegmentSearch" name="should compare results in the final segment properly" time="0.006"></testcase>
+  <testcase classname="StringMatch _lastSegmentSearch" name="should handle weird comparisons as well" time="0.001"></testcase>
+  <testcase classname="StringMatch _lastSegmentSearch" name="should compare matches that don&apos;t fit in just the final segment" time="0.018"></testcase>
+  <testcase classname="StringMatch _lastSegmentSearch" name="should handle matches that don&apos;t fit at all in the final segment" time="0.001"></testcase>
+</testsuite>
+<testsuite name="StringMatch stringMatch" errors="0" tests="17" failures="0" time="0.044" timestamp="2013-07-23T14:11:37">
+  <testcase classname="StringMatch stringMatch" name="should return appropriate matching ranges" time="0.002"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should prefer special characters" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should optionally prefer prefix matches" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should default to single segment matches" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should place QuickOpen well relative to other quicks" time="0.002"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right spec/live" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right samples/index" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right Commands" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right extensions" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right EUtil" time="0"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right ECH" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right DMan" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right sru" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right jsutil" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right jsu" time="0.003"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should find the right trange" time="0.001"></testcase>
+  <testcase classname="StringMatch stringMatch" name="should prefer prefix matches" time="0.001"></testcase>
+</testsuite>
+<testsuite name="StringMatch scoring" errors="0" tests="5" failures="0" time="0.007" timestamp="2013-07-23T14:11:37">
+  <testcase classname="StringMatch scoring" name="should score consecutive matches across the last segment" time="0"></testcase>
+  <testcase classname="StringMatch scoring" name="should boost last segment matches, even when searching the whole string" time="0.001"></testcase>
+  <testcase classname="StringMatch scoring" name="should treat the character after _ as a special" time="0"></testcase>
+  <testcase classname="StringMatch scoring" name="should penalize matches that don&apos;t start on a special" time="0"></testcase>
+  <testcase classname="StringMatch scoring" name="should try to prioritize points for the last segment" time="0.001"></testcase>
+</testsuite>
+<testsuite name="StringMatch multiFieldSort" errors="0" tests="3" failures="0" time="0.007" timestamp="2013-07-23T14:11:37">
+  <testcase classname="StringMatch multiFieldSort" name="should accept old-style key: priority" time="0.001"></testcase>
+  <testcase classname="StringMatch multiFieldSort" name="should accept array of keys" time="0"></testcase>
+  <testcase classname="StringMatch multiFieldSort" name="should accept a comparison function" time="0.001"></testcase>
+</testsuite>
+<testsuite name="StringMatch StringMatcher" errors="0" tests="5" failures="0" time="0.008" timestamp="2013-07-23T14:11:37">
+  <testcase classname="StringMatch StringMatcher" name="should manage its caches properly" time="0.001"></testcase>
+  <testcase classname="StringMatch StringMatcher" name="should handle collisions with built-in members" time="0.001"></testcase>
+  <testcase classname="StringMatch StringMatcher" name="can reset the caches" time="0"></testcase>
+  <testcase classname="StringMatch StringMatcher" name="should accept the prefixes option" time="0"></testcase>
+  <testcase classname="StringMatch StringMatcher" name="should pass the segmentedSearch option" time="0.001"></testcase>
+</testsuite>
+<testsuite name="FileUtils" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:37">
+</testsuite>
+<testsuite name="FileUtils convertWindowsPathToUnixPath" errors="0" tests="2" failures="0" time="0.003" timestamp="2013-07-23T14:11:37">
+  <testcase classname="FileUtils convertWindowsPathToUnixPath" name="should convert a Windows path to a Unix-style path when on Windows" time="0"></testcase>
+  <testcase classname="FileUtils convertWindowsPathToUnixPath" name="should not modify a native path when on Mac, even if it has backslashes" time="0"></testcase>
+</testsuite>
+<testsuite name="FileUtils getDirectoryPath" errors="0" tests="4" failures="0" time="0.008" timestamp="2013-07-23T14:11:37">
+  <testcase classname="FileUtils getDirectoryPath" name="should get the parent directory of a normalized win file path" time="0"></testcase>
+  <testcase classname="FileUtils getDirectoryPath" name="should get the parent directory of a posix file path" time="0"></testcase>
+  <testcase classname="FileUtils getDirectoryPath" name="should return the unchanged directory of a normalized win directory path" time="0"></testcase>
+  <testcase classname="FileUtils getDirectoryPath" name="should return the unchanged directory of a posix directory path" time="0.001"></testcase>
+</testsuite>
+<testsuite name="FileUtils getBaseName" errors="0" tests="6" failures="0" time="0.007" timestamp="2013-07-23T14:11:37">
+  <testcase classname="FileUtils getBaseName" name="should get the file name of a normalized win file path" time="0"></testcase>
+  <testcase classname="FileUtils getBaseName" name="should get the file name of a posix file path" time="0.001"></testcase>
+  <testcase classname="FileUtils getBaseName" name="should return the directory name of a normalized win directory path" time="0.001"></testcase>
+  <testcase classname="FileUtils getBaseName" name="should return the directory name of a posix directory path" time="0"></testcase>
+  <testcase classname="FileUtils getBaseName" name="should return the file name of a path containing #" time="0"></testcase>
+  <testcase classname="FileUtils getBaseName" name="should return the directory name of a path containing #" time="0.001"></testcase>
+</testsuite>
+<testsuite name="FileUtils getFilenameExtension" errors="0" tests="5" failures="0" time="0.006" timestamp="2013-07-23T14:11:37">
+  <testcase classname="FileUtils getFilenameExtension" name="should get the extension of a normalized win file path" time="0.001"></testcase>
+  <testcase classname="FileUtils getFilenameExtension" name="should get the extension of a posix file path" time="0"></testcase>
+  <testcase classname="FileUtils getFilenameExtension" name="should return empty extension for a normalized win directory path" time="0"></testcase>
+  <testcase classname="FileUtils getFilenameExtension" name="should return empty extension for a posix directory path" time="0"></testcase>
+  <testcase classname="FileUtils getFilenameExtension" name="should return the extension of a filename containing ." time="0"></testcase>
+</testsuite>
+<testsuite name="KeyBindingManager" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:37">
+</testsuite>
+<testsuite name="KeyBindingManager addBinding" errors="0" tests="13" failures="0" time="0.044" timestamp="2013-07-23T14:11:37">
+  <testcase classname="KeyBindingManager addBinding" name="should require command and key binding arguments" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should ignore invalid bindings" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should add single bindings to the keymap" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should use displayKey to override display of the shortcut" time="0"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should add multiple bindings to the keymap" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should allow the command argument to be a string or an object" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should not allow a generic key binding to be replaced with another generic binding" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should allow a platform-specific key binding to override a generic binding" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should keep a platform-specific key binding if a generic binding is added later" time="0.009"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should allow a command to map to multiple key bindings" time="0.002"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should support the Ctrl key on mac" time="0.002"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should use windows key bindings on linux" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager addBinding" name="should support windows compatible bindings" time="0.001"></testcase>
+</testsuite>
+<testsuite name="KeyBindingManager removeBinding" errors="0" tests="5" failures="0" time="0.016" timestamp="2013-07-23T14:11:37">
+  <testcase classname="KeyBindingManager removeBinding" name="should handle an empty keymap gracefully" time="0"></testcase>
+  <testcase classname="KeyBindingManager removeBinding" name="should require a key to remove" time="0"></testcase>
+  <testcase classname="KeyBindingManager removeBinding" name="should remove a key from the key map" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager removeBinding" name="should remove a key from the key map for the specified platform" time="0.002"></testcase>
+  <testcase classname="KeyBindingManager removeBinding" name="should exclude a specified platform key binding for a cross-platform command" time="0.001"></testcase>
+</testsuite>
+<testsuite name="KeyBindingManager handleKey" errors="0" tests="1" failures="0" time="0.002" timestamp="2013-07-23T14:11:37">
+  <testcase classname="KeyBindingManager handleKey" name="should execute a command" time="0.001"></testcase>
+</testsuite>
+<testsuite name="KeyBindingManager global hooks" errors="0" tests="3" failures="0" time="0.009" timestamp="2013-07-23T14:11:37">
+  <testcase classname="KeyBindingManager global hooks" name="should block command execution if a global hook is added that prevents it" time="0.001"></testcase>
+  <testcase classname="KeyBindingManager global hooks" name="should not block command execution if a global hook is added then removed" time="0.004"></testcase>
+  <testcase classname="KeyBindingManager global hooks" name="should call the most recently added hook first" time="0.001"></testcase>
+</testsuite>
+<testsuite name="HTMLUtils CodeHints" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:38">
+</testsuite>
+<testsuite name="HTMLUtils CodeHints Html Hinting" errors="0" tests="27" failures="0" time="1.009" timestamp="2013-07-23T14:11:37">
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not find attribute hints in an empty editor" time="0.098"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find an attribute as a tag is getting typed" time="0.029"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find an attribute as it&apos;s added to a tag" time="0.027"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find an attribute as the value is typed" time="0.032"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not find an attribute as text is added" time="0.025"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find the attribute value if present" time="0.031"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find the full attribute as an existing value is changed" time="0.024"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find the attribute value even when there is space around the =" time="0.037"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find the attribute value when the IP is after the =" time="0.084"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find the tagname as it&apos;s typed" time="0.026"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should hint tagname as the open &lt; is typed" time="0.03"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find the tagname of the current tag if two tags are right next to each other" time="0.024"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should hint attributes even if there is a lot of space between the tag name and the next attr name" time="0.022"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find the tagname as space is typed before the attr name is added" time="0.023"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not hint anything after the tag is closed" time="0.024"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not hint anything after a closing tag" time="0.024"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not hint anything inside a closing tag" time="0.026"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not find attributes in an empty editor" time="0.018"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not find attributes before the tag is opened" time="0.026"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not find attributes if there isn&apos;t a valid tag" time="0.03"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not find attributes after the tag is closed" time="0.029"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find all the tag attributes immediately after the tag" time="0.028"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find all the tag attributes before closing the tag" time="0.031"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find all the tag attributes backward and forward" time="0.125"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should find valid attributes marked as errors by the tokenizer" time="0.031"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not find attributes in nested tags" time="0.027"></testcase>
+  <testcase classname="HTMLUtils CodeHints Html Hinting" name="should not find attributes of other tags on an opened tag" time="0.025"></testcase>
+</testsuite>
+<testsuite name="Editor" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:38">
+</testsuite>
+<testsuite name="Editor Editor wrapper" errors="0" tests="2" failures="0" time="0.05" timestamp="2013-07-23T14:11:38">
+  <testcase classname="Editor Editor wrapper" name="should initialize with content" time="0.026"></testcase>
+  <testcase classname="Editor Editor wrapper" name="should trigger a synchronous Document change event when an edit is performed" time="0.023"></testcase>
+</testsuite>
+<testsuite name="Editor File extension to mode mapping" errors="0" tests="5" failures="0" time="0.006" timestamp="2013-07-23T14:11:38">
+  <testcase classname="Editor File extension to mode mapping" name="should switch to the HTML mode for files ending in .html" time="0"></testcase>
+  <testcase classname="Editor File extension to mode mapping" name="should switch modes for UNIX absolute path" time="0"></testcase>
+  <testcase classname="Editor File extension to mode mapping" name="should switch modes for relative path" time="0"></testcase>
+  <testcase classname="Editor File extension to mode mapping" name="should accept just a file name too" time="0"></testcase>
+  <testcase classname="Editor File extension to mode mapping" name="should default to plain text for unknown file extensions" time="0"></testcase>
+</testsuite>
+<testsuite name="Editor Focus" errors="0" tests="2" failures="0" time="0.063" timestamp="2013-07-23T14:11:38">
+  <testcase classname="Editor Focus" name="should not have focus until explicitly set" time="0.038"></testcase>
+  <testcase classname="Editor Focus" name="should be able to detect when it has focus" time="0.024"></testcase>
+</testsuite>
+<testsuite name="Editor getModeForSelection()" errors="0" tests="2" failures="0" time="0.077" timestamp="2013-07-23T14:11:38">
+  <testcase classname="Editor getModeForSelection()" name="should get mode in homogenous file" time="0.028"></testcase>
+  <testcase classname="Editor getModeForSelection()" name="should get mode in HTML file" time="0.046"></testcase>
+</testsuite>
+<testsuite name="EditorManager" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:39">
+</testsuite>
+<testsuite name="EditorManager resizeEditor() flag options" errors="0" tests="12" failures="0" time="0.451" timestamp="2013-07-23T14:11:38">
+  <testcase classname="EditorManager resizeEditor() flag options" name="should refresh if force is specified even if no width or height change" time="0.037"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should refresh if force is specified when width changed but height hasn&apos;t" time="0.03"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should refresh if force is specified when height changed but width hasn&apos;t" time="0.031"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should refresh if force is specified when both height and width changed" time="0.041"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should NOT refresh if skip is specified if no width or height change" time="0.03"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should NOT refresh if skip is specified when width changed but height hasn&apos;t" time="0.028"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should NOT refresh if skip is specified when height changed but width hasn&apos;t" time="0.034"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should NOT refresh if skip is specified when both height and width changed" time="0.04"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should NOT refresh if unspecified if no width or height change" time="0.041"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should refresh if unspecified when width changed but height hasn&apos;t" time="0.039"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should refresh if unspecified when height changed but width hasn&apos;t" time="0.044"></testcase>
+  <testcase classname="EditorManager resizeEditor() flag options" name="should refresh if unspecified when both height and width changed" time="0.043"></testcase>
+</testsuite>
+<testsuite name="Extension Installation" errors="0" tests="5" failures="0" time="0.913" timestamp="2013-07-23T14:11:39">
+  <testcase classname="Extension Installation" name="should return information about a valid file" time="0.148"></testcase>
+  <testcase classname="Extension Installation" name="should detect missing metadata" time="0.15"></testcase>
+  <testcase classname="Extension Installation" name="extensions should install and load" time="0.373"></testcase>
+  <testcase classname="Extension Installation" name="extensions should install disabled if they are not compatible" time="0.136"></testcase>
+  <testcase classname="Extension Installation" name="should remove an installed extension" time="0.098"></testcase>
+</testsuite>
+<testsuite name="ExtensionLoader" errors="0" tests="9" failures="0" time="0.973" timestamp="2013-07-23T14:11:40">
+  <testcase classname="ExtensionLoader" name="should load a basic extension" time="0.016"></testcase>
+  <testcase classname="ExtensionLoader" name="should load a basic extension with sync init" time="0.033"></testcase>
+  <testcase classname="ExtensionLoader" name="should load a basic extension with async init" time="0.126"></testcase>
+  <testcase classname="ExtensionLoader" name="should log an error if an extension fails to init" time="0.034"></testcase>
+  <testcase classname="ExtensionLoader" name="should log an error with a message if an extension fails to sync init" time="0.034"></testcase>
+  <testcase classname="ExtensionLoader" name="should log an error with a message if an extension fails to async init" time="0.14"></testcase>
+  <testcase classname="ExtensionLoader" name="should log an error if an extension init fails with a timeout" time="0.53"></testcase>
+  <testcase classname="ExtensionLoader" name="should log an error if an extension init fails with a runtime error" time="0.022"></testcase>
+  <testcase classname="ExtensionLoader" name="should log an error if an extension fails during RequireJS loading" time="0.019"></testcase>
+</testsuite>
+<testsuite name="FileIndexManager" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:41">
+</testsuite>
+<testsuite name="FileIndexManager unit tests" errors="0" tests="3" failures="0" time="0.051" timestamp="2013-07-23T14:11:41">
+  <testcase classname="FileIndexManager unit tests" name="should abort a running scan and start a new one if another scan is requested while dirty" time="0.007"></testcase>
+  <testcase classname="FileIndexManager unit tests" name="should abort a running scan and start a new one when marked dirty (even before another scan is requested)" time="0.001"></testcase>
+  <testcase classname="FileIndexManager unit tests" name="should not start a new scan if another scan is requested while not dirty" time="0.002"></testcase>
+</testsuite>
+<testsuite name="FindReplace" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:43">
+</testsuite>
+<testsuite name="FindReplace Search" errors="0" tests="7" failures="0" time="0.685" timestamp="2013-07-23T14:11:41">
+  <testcase classname="FindReplace Search" name="should find all case-insensitive matches" time="0.123"></testcase>
+  <testcase classname="FindReplace Search" name="should find all case-sensitive matches" time="0.069"></testcase>
+  <testcase classname="FindReplace Search" name="should Find Next after search bar closed, including wraparound" time="0.096"></testcase>
+  <testcase classname="FindReplace Search" name="should Find Previous after search bar closed, including wraparound" time="0.159"></testcase>
+  <testcase classname="FindReplace Search" name="shouldn&apos;t Find Next after search bar reopened" time="0.112"></testcase>
+  <testcase classname="FindReplace Search" name="should open search bar on Find Next with no previous search" time="0.035"></testcase>
+  <testcase classname="FindReplace Search" name="should select-all without affecting search state if Find invoked while search bar open" time="0.082"></testcase>
+</testsuite>
+<testsuite name="FindReplace Incremental search" errors="0" tests="5" failures="0" time="0.429" timestamp="2013-07-23T14:11:42">
+  <testcase classname="FindReplace Incremental search" name="should re-search from original position when text changes" time="0.103"></testcase>
+  <testcase classname="FindReplace Incremental search" name="should re-search from original position when text changes, even after Find Next" time="0.093"></testcase>
+  <testcase classname="FindReplace Incremental search" name="should extend original selection when appending to prepopulated text" time="0.064"></testcase>
+  <testcase classname="FindReplace Incremental search" name="should collapse selection when appending to prepopulated text causes no result" time="0.085"></testcase>
+  <testcase classname="FindReplace Incremental search" name="should clear selection, return cursor to start after backspacing to empty query" time="0.082"></testcase>
+</testsuite>
+<testsuite name="FindReplace Terminating search" errors="0" tests="7" failures="0" time="0.629" timestamp="2013-07-23T14:11:42">
+  <testcase classname="FindReplace Terminating search" name="should go to next on Enter with prepopulated text &amp; no Find Nexts" time="0.091"></testcase>
+  <testcase classname="FindReplace Terminating search" name="shouldn&apos;t change selection on Esc with prepopulated text &amp; no Find Nexts" time="0.101"></testcase>
+  <testcase classname="FindReplace Terminating search" name="shouldn&apos;t change selection on Enter with prepopulated text &amp; after Find Next" time="0.072"></testcase>
+  <testcase classname="FindReplace Terminating search" name="shouldn&apos;t change selection on Enter after typing text, no Find Nexts" time="0.108"></testcase>
+  <testcase classname="FindReplace Terminating search" name="shouldn&apos;t change selection on Enter after typing text &amp; Find Next" time="0.075"></testcase>
+  <testcase classname="FindReplace Terminating search" name="should no-op on Find Next with blank search" time="0.12"></testcase>
+  <testcase classname="FindReplace Terminating search" name="should no-op on Enter with blank search" time="0.055"></testcase>
+</testsuite>
+<testsuite name="FindReplace RegExp Search" errors="0" tests="7" failures="0" time="0.371" timestamp="2013-07-23T14:11:43">
+  <testcase classname="FindReplace RegExp Search" name="should find based on regexp" time="0.053"></testcase>
+  <testcase classname="FindReplace RegExp Search" name="should be a case-sensitive regexp by default" time="0.045"></testcase>
+  <testcase classname="FindReplace RegExp Search" name="should support case-insensitive regexps via /.../i" time="0.065"></testcase>
+  <testcase classname="FindReplace RegExp Search" name="shouldn&apos;t choke on partial regexp" time="0.054"></testcase>
+  <testcase classname="FindReplace RegExp Search" name="shouldn&apos;t choke on invalid regexp" time="0.042"></testcase>
+  <testcase classname="FindReplace RegExp Search" name="shouldn&apos;t choke on empty regexp" time="0.039"></testcase>
+  <testcase classname="FindReplace RegExp Search" name="shouldn&apos;t freeze on /.*/ regexp" time="0.065"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO" errors="0" tests="1" failures="0" time="4.936" timestamp="2013-07-23T14:11:43">
+  <testcase classname="LowLevelFileIO" name="should have a brackets.fs namespace" time="0.275"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO readdir" errors="0" tests="4" failures="0" time="0.661" timestamp="2013-07-23T14:11:43">
+  <testcase classname="LowLevelFileIO readdir" name="should read a directory from disk" time="0.196"></testcase>
+  <testcase classname="LowLevelFileIO readdir" name="should return an error if the directory doesn&apos;t exist" time="0.166"></testcase>
+  <testcase classname="LowLevelFileIO readdir" name="should return an error if the directory can&apos;t be read (Mac only)" time="0.115"></testcase>
+  <testcase classname="LowLevelFileIO readdir" name="should return an error if invalid parameters are passed" time="0.179"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO stat" errors="0" tests="4" failures="0" time="0.558" timestamp="2013-07-23T14:11:44">
+  <testcase classname="LowLevelFileIO stat" name="should return correct information for a directory" time="0.17"></testcase>
+  <testcase classname="LowLevelFileIO stat" name="should return correct information for a file" time="0.123"></testcase>
+  <testcase classname="LowLevelFileIO stat" name="should return an error if the file/directory doesn&apos;t exist" time="0.122"></testcase>
+  <testcase classname="LowLevelFileIO stat" name="should return an error if incorrect parameters are passed" time="0.139"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO readFile" errors="0" tests="5" failures="0" time="0.887" timestamp="2013-07-23T14:11:44">
+  <testcase classname="LowLevelFileIO readFile" name="should read a text file" time="0.185"></testcase>
+  <testcase classname="LowLevelFileIO readFile" name="should return an error if trying to read a non-existent file" time="0.156"></testcase>
+  <testcase classname="LowLevelFileIO readFile" name="should return an error if trying to use an unsppported encoding" time="0.295"></testcase>
+  <testcase classname="LowLevelFileIO readFile" name="should return an error if called with invalid parameters" time="0.118"></testcase>
+  <testcase classname="LowLevelFileIO readFile" name="should return an error if trying to read a directory" time="0.129"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO writeFile" errors="0" tests="4" failures="0" time="0.608" timestamp="2013-07-23T14:11:45">
+  <testcase classname="LowLevelFileIO writeFile" name="should write the entire contents of a file" time="0.13"></testcase>
+  <testcase classname="LowLevelFileIO writeFile" name="should return an error if the file can&apos;t be written (Mac only)" time="0.147"></testcase>
+  <testcase classname="LowLevelFileIO writeFile" name="should return an error if called with invalid parameters" time="0.17"></testcase>
+  <testcase classname="LowLevelFileIO writeFile" name="should return an error if trying to write a directory" time="0.157"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO unlink" errors="0" tests="4" failures="0" time="0.584" timestamp="2013-07-23T14:11:46">
+  <testcase classname="LowLevelFileIO unlink" name="should remove a file" time="0.197"></testcase>
+  <testcase classname="LowLevelFileIO unlink" name="should return an error if the file doesn&apos;t exist" time="0.113"></testcase>
+  <testcase classname="LowLevelFileIO unlink" name="should return an error if called with invalid parameters" time="0.121"></testcase>
+  <testcase classname="LowLevelFileIO unlink" name="should remove a directory" time="0.15"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO makedir" errors="0" tests="1" failures="0" time="0.166" timestamp="2013-07-23T14:11:47">
+  <testcase classname="LowLevelFileIO makedir" name="should make a new directory" time="0.166"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO rename" errors="0" tests="4" failures="0" time="0.711" timestamp="2013-07-23T14:11:47">
+  <testcase classname="LowLevelFileIO rename" name="should rename a file" time="0.206"></testcase>
+  <testcase classname="LowLevelFileIO rename" name="should rename a folder" time="0.229"></testcase>
+  <testcase classname="LowLevelFileIO rename" name="should return an error if the new name already exists" time="0.162"></testcase>
+  <testcase classname="LowLevelFileIO rename" name="should return an error if the parent folder is read only (Mac only)" time="0.109"></testcase>
+</testsuite>
+<testsuite name="LowLevelFileIO moveToTrash" errors="0" tests="3" failures="0" time="0.483" timestamp="2013-07-23T14:11:47">
+  <testcase classname="LowLevelFileIO moveToTrash" name="should move a file to the trash" time="0.177"></testcase>
+  <testcase classname="LowLevelFileIO moveToTrash" name="should move a folder to the trash" time="0.163"></testcase>
+  <testcase classname="LowLevelFileIO moveToTrash" name="should return an error if the item doesn&apos;t exsit" time="0.14"></testcase>
+</testsuite>
+<testsuite name="MultiRangeInlineEditor" errors="0" tests="8" failures="0" time="0.403" timestamp="2013-07-23T14:11:48">
+  <testcase classname="MultiRangeInlineEditor" name="should initialize to a default state" time="0.023"></testcase>
+  <testcase classname="MultiRangeInlineEditor" name="should load a single rule and initialize htmlContent and editor" time="0.031"></testcase>
+  <testcase classname="MultiRangeInlineEditor" name="should contain a rule list widget displaying info for each rule" time="0.026"></testcase>
+  <testcase classname="MultiRangeInlineEditor" name="should change selection to the next rule" time="0.03"></testcase>
+  <testcase classname="MultiRangeInlineEditor" name="should change selection to the previous rule" time="0.036"></testcase>
+  <testcase classname="MultiRangeInlineEditor" name="should retreive all rules" time="0.018"></testcase>
+  <testcase classname="MultiRangeInlineEditor" name="should retreive the selected rule" time="0.148"></testcase>
+  <testcase classname="MultiRangeInlineEditor" name="should close and return to the host editor" time="0.083"></testcase>
+</testsuite>
+<testsuite name="ExtensionManager" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:12:00">
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManager" errors="0" tests="14" failures="0" time="3.218" timestamp="2013-07-23T14:11:48">
+  <testcase classname="ExtensionManager ExtensionManager" name="should download the extension list from the registry" time="0.519"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should trigger a registryUpdate event when updating the extension list from the registry" time="0.524"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should fail if it can&apos;t access the registry" time="0.51"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should fail if registry content is malformed" time="0.508"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should correctly list which extensions are installed" time="0.527"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should list an extension that is installed but failed to load" time="0.515"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should set the title for a legacy extension based on its folder name" time="0.013"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should determine the location type for installed extensions" time="0.016"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should raise a statusChange event when an extension is loaded" time="0.015"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should raise a statusChange event when a legacy extension is loaded, with its path as the id" time="0.023"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should remove an extension and raise a statusChange event" time="0.014"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should fail when trying to remove an extension that&apos;s not installed" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should calculate compatibility info correctly" time="0.013"></testcase>
+  <testcase classname="ExtensionManager ExtensionManager" name="should return the correct download URL for an extension" time="0"></testcase>
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView Model" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:11:55">
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView Model when initialized from registry" errors="0" tests="6" failures="0" time="3.159" timestamp="2013-07-23T14:11:52">
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from registry" name="should initialize itself from the extension list" time="0.535"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from registry" name="should start with the full set sorted in reverse publish date order" time="0.52"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from registry" name="should search case-insensitively for a keyword in the metadata for a given list of registry ids" time="0.521"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from registry" name="should return correct results when subsequent queries are longer versions of previous queries" time="0.528"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from registry" name="should go back to the full sorted set when cleared" time="0.525"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from registry" name="should trigger filter event when filter changes" time="0.523"></testcase>
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView Model when initialized from local extension list" errors="0" tests="14" failures="0" time="0.071" timestamp="2013-07-23T14:11:55">
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should initialize itself from the extension list" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should only contain dev and user extensions, sorted case-insensitively on the extension title or name (or last segment of path name for legacy extensions)" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should include a newly-installed extension" time="0.012"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should raise an event when an extension is installed" time="0.012"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should not include a removed extension" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should raise an event when an extension is removed" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should mark an extension for removal and raise an event without actually removing it" time="0.006"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should unmark an extension previously marked for removal and raise an event" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should remove extensions previously marked for removal" time="0.003"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should mark an extension for update and raise an event" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should unmark an extension for update, deleting the package and raising an event" time="0.003"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should change an extension marked for removal to update raise an event" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should update extensions marked for update" time="0.002"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView Model when initialized from local extension list" name="should recognize when an update is available" time="0.004"></testcase>
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:12:00">
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView when showing registry entries" errors="0" tests="9" failures="0" time="4.188" timestamp="2013-07-23T14:11:55">
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should populate itself with registry entries and display their fields when created" time="0.533"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should display owner even for installed items" time="0.011"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should show an install button for each item" time="0.513"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should show disabled install buttons for items that are already installed" time="0.531"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should show an update button for items that have an update available" time="0.517"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should show disabled install buttons for items that have incompatible versions" time="0.515"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should bring up the install dialog and install an item when install button is clicked" time="0.524"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should disable the install button for an item immediately after installing it" time="0.525"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing registry entries" name="should open links in the native browser instead of in Brackets" time="0.509"></testcase>
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView when showing installed extensions" errors="0" tests="14" failures="0" time="0.31" timestamp="2013-07-23T14:11:59">
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should show the &apos;no extensions&apos; message when there are no extensions installed" time="0.003"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should show the &apos;no extensions&apos; message when there are extensions installed but none match the search query" time="0.018"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should show only items that are already installed and have a remove button for each" time="0.049"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should show a newly installed extension" time="0.02"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should not show extensions in the default folder" time="0.017"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should show extensions that failed to load with a &apos;remove&apos; link" time="0.021"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should not have a &apos;remove&apos; link for extensions in the dev folder that failed to load" time="0.017"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should disable the Remove button for extensions in the dev folder" time="0.028"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should mark the given extension for removal, hide the remove button, and show an undo link" time="0.019"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should undo marking an extension for removal" time="0.018"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should mark a legacy extension for removal" time="0.018"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should no longer show a fully removed extension" time="0.023"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should mark the given extension for update, hide the remove button, and show an undo link" time="0.018"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView when showing installed extensions" name="should undo marking an extension for update" time="0.023"></testcase>
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView ExtensionManagerDialog" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:12:00">
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView ExtensionManagerDialog _performChanges" errors="0" tests="7" failures="0" time="0.14" timestamp="2013-07-23T14:11:59">
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog _performChanges" name="should not show a removal confirmation dialog if no extensions were removed" time="0.013"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog _performChanges" name="should not show a removal confirmation dialog if an extension was marked for removal and then unmarked" time="0.03"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog _performChanges" name="should show a removal confirmation dialog if an extension was removed" time="0.015"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog _performChanges" name="should remove extensions and quit if the user hits Remove and Quit on the removal confirmation dialog" time="0.02"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog _performChanges" name="should not remove extensions or quit if the user hits Cancel on the removal confirmation dialog" time="0.019"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog _performChanges" name="should update extensions and quit if the user hits Update and Quit on the removal confirmation dialog" time="0.015"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog _performChanges" name="should not update extensions or quit if the user hits Cancel on the confirmation dialog" time="0.017"></testcase>
+</testsuite>
+<testsuite name="ExtensionManager ExtensionManagerView ExtensionManagerDialog initialization" errors="0" tests="4" failures="0" time="0.263" timestamp="2013-07-23T14:11:59">
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog initialization" name="should show the spinner before the registry appears successfully and hide it after" time="0.103"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog initialization" name="should show an error and remove the spinner if there is an error fetching the registry" time="0.05"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog initialization" name="should hide the registry tab when no URL is specified" time="0.054"></testcase>
+  <testcase classname="ExtensionManager ExtensionManagerView ExtensionManagerDialog initialization" name="should show the registry tab when a URL is specified" time="0.05"></testcase>
+</testsuite>
+<testsuite name="Install Extension Dialog" errors="0" tests="1" failures="0" time="0.002" timestamp="2013-07-23T14:12:10">
+  <testcase classname="Install Extension Dialog" name="should close the test window" time="0.001"></testcase>
+</testsuite>
+<testsuite name="Install Extension Dialog when user-initiated" errors="0" tests="53" failures="0" time="9.934" timestamp="2013-07-23T14:12:00">
+  <testcase classname="Install Extension Dialog when user-initiated" name="should open the dialog" time="5.356"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should have the install button disabled when dialog is first open due to empty url field" time="0.039"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should not start install if enter hit while url field is empty" time="0.034"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog when Cancel button clicked before entering url" time="0.052"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog when Esc pressed before entering url" time="0.052"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should enable the install button when the url field is nonempty" time="0.028"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should re-disable the install button if the url field becomes nonempty and then empty" time="0.027"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog when Cancel button clicked after entering url" time="0.059"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog when Esc pressed after entering url" time="0.054"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should start the installer with the given URL when Install button clicked" time="0.04"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should start the installer with the given URL when Enter is pressed" time="0.032"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should disable the ok button while installing" time="0.032"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should hide the url field and &apos;browse extensions&apos; button while installing" time="0.037"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should do nothing if Enter pressed while installing" time="0.151"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should cancel installation if cancel clicked while installing" time="0.053"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should cancel installation if Esc pressed while installing" time="0.249"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should disable the cancel button while cancellation is processed" time="0.048"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should ignore the Esc key while cancellation is processed" time="0.041"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should ignore the Enter key while cancellation is processed" time="0.043"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should re-enable the ok button and hide cancel button after install succeeds" time="0.041"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should re-enable the ok button and hide cancel button after install succeeds synchronously" time="0.039"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should re-enable the ok button and hide cancel button after install fails" time="0.042"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should re-enable the ok button and hide cancel button after install fails synchronously" time="0.039"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should re-enable the ok button and hide cancel button after install finishes canceling" time="0.039"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if ok button clicked after install succeeds" time="0.066"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if ok button clicked after install succeeds synchronously" time="0.058"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Enter pressed after install succeeds" time="0.054"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Enter pressed after install succeeds synchronously" time="0.056"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Esc pressed after install succeeds" time="0.062"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Esc pressed after install succeeds synchronously" time="0.063"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if ok button clicked after install fails" time="0.081"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if ok button clicked after install fails synchronously" time="0.153"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Enter pressed after install fails" time="0.063"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Enter pressed after install fails synchronously" time="0.067"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Esc pressed after install fails" time="0.057"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Esc pressed after install fails synchronously" time="0.055"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if ok button clicked after install finishes canceling" time="0.058"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Enter pressed after install finishes canceling" time="0.054"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close the dialog if Esc pressed after install finishes canceling" time="0.055"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should time out and re-enable close button if cancel doesn&apos;t complete quickly" time="0.14"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close when clicking Close button after timing out if cancel doesn&apos;t complete quickly" time="0.156"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close when hitting Enter after timing out if cancel doesn&apos;t complete quickly" time="0.144"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should close when hitting Esc after timing out if cancel doesn&apos;t complete quickly" time="0.268"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should keep close button enabled and not throw an exception if install succeeds after cancelation" time="0.352"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should keep close button enabled and not throw an exception if install fails after cancelation" time="0.176"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should keep close button enabled and not throw an exception if install cancelation completes after cancelation" time="0.278"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should open the extension list wiki page when the user clicks on the Browse Extensions button" time="0.07"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should display a warning message if the extension is already installed" time="0.068"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should display a warning message if the same version is already installed" time="0.121"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should display a warning message if an older version is already installed" time="0.066"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should delete the downloaded file if the warning message is cancelled" time="0.086"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should pass the installation result if the warning message is confirmed" time="0.119"></testcase>
+  <testcase classname="Install Extension Dialog when user-initiated" name="should pass installation result when update is needed" time="0.185"></testcase>
+</testsuite>
+<testsuite name="Install Extension Dialog when initiated from Extension Manager" errors="0" tests="1" failures="0" time="0.128" timestamp="2013-07-23T14:12:10">
+  <testcase classname="Install Extension Dialog when initiated from Extension Manager" name="should immediately start installing from the given url, and in the correct UI state" time="0.127"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:12:20">
+</testsuite>
+<testsuite name="EditorCommandHandlers Line comment/uncomment" errors="0" tests="16" failures="0" time="2.295" timestamp="2013-07-23T14:12:10">
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment a single line, cursor at start" time="0.103"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment a single line, cursor at end" time="0.083"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment first line in file" time="0.072"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment a single partly-selected line" time="0.117"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment a single selected line" time="0.086"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment a single fully-selected line (including LF)" time="0.093"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment multiple selected lines" time="0.184"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment ragged multi-line selection" time="0.302"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment when selection starts &amp; ends on whitespace lines" time="0.122"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should do nothing on whitespace line" time="0.056"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should do nothing when only whitespace lines selected" time="0.069"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment after select all" time="0.085"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment lines that were partially commented out already, our style" time="0.174"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should comment/uncomment lines that were partially commented out already, comment closer to code" time="0.282"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should uncomment indented, aligned comments" time="0.075"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment/uncomment" name="should uncomment ragged partial comments" time="0.106"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Line comment in languages with mutiple line comment prefixes" errors="0" tests="3" failures="0" time="0.315" timestamp="2013-07-23T14:12:12">
+  <testcase classname="EditorCommandHandlers Line comment in languages with mutiple line comment prefixes" name="should comment using the first prefix" time="0.129"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment in languages with mutiple line comment prefixes" name="should uncomment every prefix" time="0.073"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment in languages with mutiple line comment prefixes" name="should only uncomment the first prefix" time="0.111"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Block comment/uncomment" errors="0" tests="23" failures="0" time="2.304" timestamp="2013-07-23T14:12:12">
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block comment/uncomment, cursor at start of line" time="0.115"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block comment/uncomment, cursor to left of existing block comment" time="0.129"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block comment/uncomment, subset of line selected" time="0.126"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, cursor within existing sub-line block comment" time="0.084"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection covering whole sub-line block comment" time="0.191"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block comment/uncomment, selection from mid-line end of line" time="0.307"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block comment/uncomment, all of line selected but not newline" time="0.095"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block comment/uncomment, all of line selected including newline" time="0.155"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block comment/uncomment, multiple lines selected" time="0.134"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block comment/uncomment, multiple partial lines selected" time="0.135"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, cursor in whitespace within block comment" time="0.084"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection in whitespace within block comment" time="0.103"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection covers block comment plus whitespace before" time="0.145"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection covers block comment plus whitespace after" time="0.116"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection covers part of block comment plus whitespace before" time="0.036"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection covers part of block comment plus whitespace after" time="0.038"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection covers block comment plus whitespace on both sides" time="0.041"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection covers block comment plus other text" time="0.047"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should block uncomment, selection covers multi-line block comment plus other text" time="0.049"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should do nothing, selection covers parts of multiple block comments" time="0.036"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should do nothing, selection covers all of multiple block comments" time="0.037"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should do nothing, selection covers multiple block comments &amp; nothing else" time="0.043"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment/uncomment" name="should do nothing, selection covers multiple block comments plus other text" time="0.04"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Block comment around line comments" errors="0" tests="25" failures="0" time="1.444" timestamp="2013-07-23T14:12:15">
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment mode, cursor inside line comment (with only whitespace to left)" time="0.049"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment, cursor in whitespace to left of line comment" time="0.038"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment, some of line-comment selected (only whitespace to left)" time="0.045"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment, some of line-comment selected including last char (only whitespace to left)" time="0.059"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment, all of line-comment selected (only whitespace to left)" time="0.056"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should insert block comment, cursor inside line comment (with code to left)" time="0.046"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should insert block comment, cursor in code to left of line comment" time="0.042"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, some of line-comment selected (with code to left)" time="0.087"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, some of line-comment selected including last char (with code to left)" time="0.085"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, all of line-comment selected (with code to left)" time="0.048"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment, all of line-comment line selected (following line is code)" time="0.061"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment, all of line-comment line selected (following line is whitespace)" time="0.039"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment, all of line-comment line selected (following line is line comment)" time="0.045"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment, all of line-comment line selected (following line is block comment)" time="0.046"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should line uncomment, multiple line comments selected" time="0.053"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should line uncomment, multiline selection covers line comment plus whitespace" time="0.064"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment mode, selection starts in whitespace &amp; ends in middle of line comment" time="0.068"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should switch to line uncomment mode, selection starts in whitespace &amp; ends at end of line comment" time="0.065"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, selection starts in code &amp; ends in middle of line comment" time="0.072"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, selection starts in middle of code &amp; ends at end of line comment" time="0.054"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, selection starts in code &amp; ends at end of line comment" time="0.057"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, selection starts at col 0 of code &amp; ends at end of line comment" time="0.072"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, selection starts on line with line comment" time="0.06"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should block comment, selection ends on line with line comment" time="0.061"></testcase>
+  <testcase classname="EditorCommandHandlers Block comment around line comments" name="should line uncomment, selection covers several line comments separated by whitespace" time="0.054"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Line comment auto-switching to block comment" errors="0" tests="11" failures="0" time="0.602" timestamp="2013-07-23T14:12:16">
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should block-comment entire line that cursor is in" time="0.154"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should block-comment entire line that sub-line selection is in" time="0.054"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should block-comment full multi-line selection" time="0.048"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should block-comment partial multi-line selection as if it were full" time="0.054"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should uncomment multi-line block comment selection, selected exactly" time="0.038"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should uncomment multi-line block comment selection, selected including trailing newline" time="0.034"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should uncomment multi-line block comment selection, only start selected" time="0.034"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should uncomment multi-line block comment selection, only middle selected" time="0.041"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should uncomment multi-line block comment selection, only end selected" time="0.057"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should uncomment multi-line block comment selection, only end selected, ends at EOF" time="0.042"></testcase>
+  <testcase classname="EditorCommandHandlers Line comment auto-switching to block comment" name="should uncomment multi-line block comment that cursor is in" time="0.036"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Comment/uncomment with mixed syntax modes" errors="0" tests="6" failures="0" time="0.524" timestamp="2013-07-23T14:12:17">
+  <testcase classname="EditorCommandHandlers Comment/uncomment with mixed syntax modes" name="should block comment/uncomment generic HTML code" time="0.066"></testcase>
+  <testcase classname="EditorCommandHandlers Comment/uncomment with mixed syntax modes" name="should block comment/uncomment generic CSS code" time="0.068"></testcase>
+  <testcase classname="EditorCommandHandlers Comment/uncomment with mixed syntax modes" name="should line comment/uncomment generic JS code" time="0.072"></testcase>
+  <testcase classname="EditorCommandHandlers Comment/uncomment with mixed syntax modes" name="should block comment/uncomment generic JS code" time="0.176"></testcase>
+  <testcase classname="EditorCommandHandlers Comment/uncomment with mixed syntax modes" name="should HTML comment/uncomment around outside of &lt;style&gt; block" time="0.098"></testcase>
+  <testcase classname="EditorCommandHandlers Comment/uncomment with mixed syntax modes" name="shouldn&apos;t comment anything when selection mixes modes" time="0.037"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Duplicate" errors="0" tests="10" failures="0" time="0.386" timestamp="2013-07-23T14:12:17">
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate whole line if no selection" time="0.029"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate line + 
+ if selected line is at end of file" time="0.028"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate first line" time="0.033"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate empty line" time="0.03"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate selection within a line" time="0.038"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate when entire line selected, excluding newline" time="0.042"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate when entire line selected, including newline" time="0.044"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate when multiple lines selected" time="0.044"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate selection crossing line boundary" time="0.046"></testcase>
+  <testcase classname="EditorCommandHandlers Duplicate" name="should duplicate after select all" time="0.044"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Move Lines Up/Down" errors="0" tests="20" failures="0" time="0.876" timestamp="2013-07-23T14:12:18">
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move whole line up if no selection" time="0.035"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move whole line down if no selection" time="0.037"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="shouldn&apos;t move up first line" time="0.024"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="shouldn&apos;t move down last line" time="0.025"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move up empty line" time="0.036"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move down empty line" time="0.034"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move up when entire line selected, excluding newline" time="0.035"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move down when entire line selected, excluding newline" time="0.035"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move up when entire line selected, including newline" time="0.059"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move down when entire line selected, including newline" time="0.045"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move up when multiple lines selected" time="0.072"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move down when multiple lines selected" time="0.045"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move up selection crossing line boundary" time="0.078"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move down selection crossing line boundary" time="0.043"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move the last line up" time="0.038"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move the first line down" time="0.03"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move the last lines up" time="0.054"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="should move the first lines down" time="0.052"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="shouldn&apos;t move up after select all" time="0.045"></testcase>
+  <testcase classname="EditorCommandHandlers Move Lines Up/Down" name="shouldn&apos;t move down after select all" time="0.036"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Delete Line" errors="0" tests="9" failures="0" time="0.339" timestamp="2013-07-23T14:12:18">
+  <testcase classname="EditorCommandHandlers Delete Line" name="should delete the first line when selection is an IP in that line" time="0.032"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line" name="should delete the first line when selection is a range in that line" time="0.055"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line" name="should delete a middle line when selection is an IP in that line" time="0.034"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line" name="should delete a middle line when selection is a range in that line" time="0.035"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line" name="should delete the last line when selection is an IP in that line" time="0.03"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line" name="should delete the last line when selection is a range in that line" time="0.035"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line" name="should delete multiple lines starting at the top when selection spans them" time="0.039"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line" name="should delete multiple lines ending at the bottom when selection spans them" time="0.035"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line" name="should leave empty text when all lines are selected" time="0.035"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Delete Line - editor with visible range" errors="0" tests="4" failures="0" time="0.17" timestamp="2013-07-23T14:12:19">
+  <testcase classname="EditorCommandHandlers Delete Line - editor with visible range" name="should delete the top line of the visible range" time="0.039"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line - editor with visible range" name="should delete the bottom line of the visible range" time="0.035"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line - editor with visible range" name="should leave a single newline when all visible lines are selected" time="0.051"></testcase>
+  <testcase classname="EditorCommandHandlers Delete Line - editor with visible range" name="should leave a single newline when only one line is visible" time="0.041"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Select Line" errors="0" tests="7" failures="0" time="0.329" timestamp="2013-07-23T14:12:19">
+  <testcase classname="EditorCommandHandlers Select Line" name="should select the first line with IP in that line" time="0.052"></testcase>
+  <testcase classname="EditorCommandHandlers Select Line" name="should select the last line with IP in that line" time="0.038"></testcase>
+  <testcase classname="EditorCommandHandlers Select Line" name="should select all in one-line file" time="0.046"></testcase>
+  <testcase classname="EditorCommandHandlers Select Line" name="should extend selection to whole line" time="0.076"></testcase>
+  <testcase classname="EditorCommandHandlers Select Line" name="should extend whole line selection to next line" time="0.047"></testcase>
+  <testcase classname="EditorCommandHandlers Select Line" name="should extend multi-line selection to full lines" time="0.032"></testcase>
+  <testcase classname="EditorCommandHandlers Select Line" name="should extend full multi-line selection to one more line" time="0.03"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Select Line - editor with visible range" errors="0" tests="3" failures="0" time="0.14" timestamp="2013-07-23T14:12:19">
+  <testcase classname="EditorCommandHandlers Select Line - editor with visible range" name="shouldn&apos;t select past end of visible range, IP in middle of last visible line" time="0.032"></testcase>
+  <testcase classname="EditorCommandHandlers Select Line - editor with visible range" name="shouldn&apos;t select past end of visible range, IP at start of last visible line" time="0.05"></testcase>
+  <testcase classname="EditorCommandHandlers Select Line - editor with visible range" name="should extend selection to include last line of visible range" time="0.057"></testcase>
+</testsuite>
+<testsuite name="EditorCommandHandlers Open Line Above and Below" errors="0" tests="14" failures="0" time="0.556" timestamp="2013-07-23T14:12:19">
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line above if no selection" time="0.041"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line above the first line if no selection" time="0.029"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line above the last line if no selection" time="0.033"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line above with no indentation if no selection" time="0.033"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line above when characters selected" time="0.041"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line above when linewise selection" time="0.046"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line above when multiple line selection" time="0.039"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line below when no selection" time="0.034"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line below the first line if no selection" time="0.03"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line below the last line if no selection" time="0.027"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line below with no indentation if no selection" time="0.049"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line below when characters selected" time="0.041"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line below when linewise selection" time="0.058"></testcase>
+  <testcase classname="EditorCommandHandlers Open Line Above and Below" name="should insert new line below when multiple line selection" time="0.045"></testcase>
+</testsuite>
+<testsuite name="Node Connection" errors="0" tests="7" failures="0" time="28.496" timestamp="2013-07-23T14:12:20">
+  <testcase classname="Node Connection" name="should not crash when attempting to load malformed domains" time="1.098"></testcase>
+  <testcase classname="Node Connection" name="should execute synchronous commands" time="1.042"></testcase>
+  <testcase classname="Node Connection" name="should execute asynchronous commands" time="1.042"></testcase>
+  <testcase classname="Node Connection" name="should receive events" time="1.048"></testcase>
+  <testcase classname="Node Connection" name="should receive command errors and continue to run" time="1.052"></testcase>
+  <testcase classname="Node Connection" name="should be robust to malformed messages" time="1.05"></testcase>
+  <testcase classname="Node Connection" name="should restart and automatically reconnect/reload" time="22.155"></testcase>
+</testsuite>
+<testsuite name="PreferenceStorage" errors="0" tests="6" failures="0" time="0.02" timestamp="2013-07-23T14:12:49">
+  <testcase classname="PreferenceStorage" name="should read initial preferences from JSON" time="0.001"></testcase>
+  <testcase classname="PreferenceStorage" name="should store values as JSON" time="0.002"></testcase>
+  <testcase classname="PreferenceStorage" name="should output preferences as JSON" time="0.001"></testcase>
+  <testcase classname="PreferenceStorage" name="should remove values" time="0.002"></testcase>
+  <testcase classname="PreferenceStorage" name="should use setAllValues to append multiple new name/value pairs" time="0.005"></testcase>
+  <testcase classname="PreferenceStorage" name="should throw errors for invalid values" time="0.001"></testcase>
+</testsuite>
+<testsuite name="PreferencesManager" errors="0" tests="1" failures="0" time="0.003" timestamp="2013-07-23T14:12:49">
+  <testcase classname="PreferencesManager" name="should use default preferences" time="0.001"></testcase>
+</testsuite>
+<testsuite name="NativeFileSystem" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:12:52">
+</testsuite>
+<testsuite name="NativeFileSystem Reading a directory" errors="0" tests="6" failures="0" time="2.55" timestamp="2013-07-23T14:12:49">
+  <testcase classname="NativeFileSystem Reading a directory" name="should read a directory from disk" time="0.11"></testcase>
+  <testcase classname="NativeFileSystem Reading a directory" name="should return an error if the directory doesn&apos;t exist" time="0.081"></testcase>
+  <testcase classname="NativeFileSystem Reading a directory" name="should return an error if you pass a bad parameter" time="0.094"></testcase>
+  <testcase classname="NativeFileSystem Reading a directory" name="should be okay to not pass an error callback" time="0.074"></testcase>
+  <testcase classname="NativeFileSystem Reading a directory" name="can read an empty folder" time="0.068"></testcase>
+  <testcase classname="NativeFileSystem Reading a directory" name="should timeout with error when reading dir if low-level stat call takes too long" time="2.113"></testcase>
+</testsuite>
+<testsuite name="NativeFileSystem Reading a file" errors="0" tests="6" failures="0" time="0.407" timestamp="2013-07-23T14:12:51">
+  <testcase classname="NativeFileSystem Reading a file" name="should read a file from disk" time="0.055"></testcase>
+  <testcase classname="NativeFileSystem Reading a file" name="should read a file from disk with lower case encoding" time="0.052"></testcase>
+  <testcase classname="NativeFileSystem Reading a file" name="should read a file from disk with upper case encoding" time="0.064"></testcase>
+  <testcase classname="NativeFileSystem Reading a file" name="should return an error if the file is not found" time="0.073"></testcase>
+  <testcase classname="NativeFileSystem Reading a file" name="should fire appropriate events when the file is done loading" time="0.085"></testcase>
+  <testcase classname="NativeFileSystem Reading a file" name="should return an error but not crash if you create a bad FileEntry" time="0.071"></testcase>
+</testsuite>
+<testsuite name="NativeFileSystem Writing" errors="0" tests="8" failures="0" time="0.916" timestamp="2013-07-23T14:12:52">
+  <testcase classname="NativeFileSystem Writing" name="should create new, zero-length files" time="0.147"></testcase>
+  <testcase classname="NativeFileSystem Writing" name="should report an error when a file does not exist and create = false" time="0.115"></testcase>
+  <testcase classname="NativeFileSystem Writing" name="should return an error if file exists and exclusive is true" time="0.106"></testcase>
+  <testcase classname="NativeFileSystem Writing" name="should return an error if the path is a directory" time="0.084"></testcase>
+  <testcase classname="NativeFileSystem Writing" name="should create overwrite files with new content" time="0.118"></testcase>
+  <testcase classname="NativeFileSystem Writing" name="should write an empty file" time="0.135"></testcase>
+  <testcase classname="NativeFileSystem Writing" name="should report an error when writing to a file that cannot be read (Mac only)" time="0.098"></testcase>
+  <testcase classname="NativeFileSystem Writing" name="should report an error when writing to a file that cannot be written" time="0.106"></testcase>
+</testsuite>
+<testsuite name="LanguageManager" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:12:53">
+</testsuite>
+<testsuite name="LanguageManager built-in languages" errors="0" tests="1" failures="0" time="0.006" timestamp="2013-07-23T14:12:52">
+  <testcase classname="LanguageManager built-in languages" name="should support built-in languages" time="0.004"></testcase>
+</testsuite>
+<testsuite name="LanguageManager LanguageManager API" errors="0" tests="4" failures="0" time="0.01" timestamp="2013-07-23T14:12:52">
+  <testcase classname="LanguageManager LanguageManager API" name="should map identifiers to languages" time="0"></testcase>
+  <testcase classname="LanguageManager LanguageManager API" name="should map file extensions to languages" time="0.001"></testcase>
+  <testcase classname="LanguageManager LanguageManager API" name="should map complex file extensions to languages" time="0.001"></testcase>
+  <testcase classname="LanguageManager LanguageManager API" name="should map file names to languages" time="0.001"></testcase>
+</testsuite>
+<testsuite name="LanguageManager defineLanguage" errors="0" tests="10" failures="0" time="0.064" timestamp="2013-07-23T14:12:52">
+  <testcase classname="LanguageManager defineLanguage" name="should create a basic language" time="0.003"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should log errors for invalid language id values" time="0.001"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should log errors for invalid language name values" time="0.001"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should log errors for missing mode value" time="0.001"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should create a language with file extensions and a mode" time="0.012"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should allow multiple languages to use the same mode" time="0.004"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should return an error if a language is already defined" time="0.002"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should validate comment prefix/suffix" time="0.003"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should validate multiple line comment prefixes" time="0.002"></testcase>
+  <testcase classname="LanguageManager defineLanguage" name="should load a built-in CodeMirror mode" time="0.021"></testcase>
+</testsuite>
+<testsuite name="LanguageManager rename file extension" errors="0" tests="4" failures="0" time="0.037" timestamp="2013-07-23T14:12:53">
+  <testcase classname="LanguageManager rename file extension" name="should update the document&apos;s language when a file is renamed" time="0.003"></testcase>
+  <testcase classname="LanguageManager rename file extension" name="should update the document&apos;s language when a language is added" time="0.002"></testcase>
+  <testcase classname="LanguageManager rename file extension" name="should update the document&apos;s language when a language is added" time="0.025"></testcase>
+  <testcase classname="LanguageManager rename file extension" name="should update the document&apos;s language when a language is modified" time="0.001"></testcase>
+</testsuite>
+<testsuite name="JSUtils" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:12:53">
+</testsuite>
+<testsuite name="JSUtils basics" errors="0" tests="1" failures="0" time="0.002" timestamp="2013-07-23T14:12:53">
+  <testcase classname="JSUtils basics" name="should parse an empty string" time="0.001"></testcase>
+</testsuite>
+<testsuite name="JSUtils line offsets" errors="0" tests="12" failures="0" time="0.295" timestamp="2013-07-23T14:12:53">
+  <testcase classname="JSUtils line offsets" name="should return correct start and end line numbers for simple functions" time="0.031"></testcase>
+  <testcase classname="JSUtils line offsets" name="should return correct start and end line numbers for parameterized functions" time="0.051"></testcase>
+  <testcase classname="JSUtils line offsets" name="should return correct start and end line numbers for single line functions" time="0.027"></testcase>
+  <testcase classname="JSUtils line offsets" name="should return correct start and end line numbers for nested functions" time="0.023"></testcase>
+  <testcase classname="JSUtils line offsets" name="should return correct start and end line numbers for functions with keyword &apos;function&apos; in name" time="0.025"></testcase>
+  <testcase classname="JSUtils line offsets" name="should ignore identifiers with whitespace" time="0.023"></testcase>
+  <testcase classname="JSUtils line offsets" name="should return correct start and end line numbers for prototype method declarations" time="0.013"></testcase>
+  <testcase classname="JSUtils line offsets" name="should handle various whitespace variations" time="0.032"></testcase>
+  <testcase classname="JSUtils line offsets" name="should work with high-ascii characters in function names" time="0.012"></testcase>
+  <testcase classname="JSUtils line offsets" name="should work with unicode characters in or around function names" time="0.015"></testcase>
+  <testcase classname="JSUtils line offsets" name="should work when colliding with prototype properties" time="0.016"></testcase>
+  <testcase classname="JSUtils line offsets" name="should fail with invalid function names" time="0.012"></testcase>
+</testsuite>
+<testsuite name="JSUtils brace ends of functions" errors="0" tests="12" failures="0" time="0.194" timestamp="2013-07-23T14:12:53">
+  <testcase classname="JSUtils brace ends of functions" name="should handle a simple function" time="0.016"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle nested braces" time="0.012"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle a nested function" time="0.011"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle an end brace in a string" time="0.015"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle an end brace in a single-quoted string" time="0.011"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle an end brace in a line comment" time="0.013"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle an end brace in a block comment" time="0.013"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle an end brace in a multiline block comment" time="0.012"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle an end brace in a regexp" time="0.014"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle a single-line function" time="0.021"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle a single-line function with a fake brace" time="0.014"></testcase>
+  <testcase classname="JSUtils brace ends of functions" name="should handle a complicated case" time="0.023"></testcase>
+</testsuite>
+<testsuite name="JSUtils brace end of function that ends at end of file" errors="0" tests="1" failures="0" time="0.026" timestamp="2013-07-23T14:12:53">
+  <testcase classname="JSUtils brace end of function that ends at end of file" name="should find the end of a function that ends exactly at the end of the file" time="0.025"></testcase>
+</testsuite>
+<testsuite name="JSUtils end of function that&apos;s unclosed at end of file" errors="0" tests="1" failures="0" time="0.017" timestamp="2013-07-23T14:12:53">
+  <testcase classname="JSUtils end of function that&apos;s unclosed at end of file" name="should find the end of a function that is unclosed at the end of the file" time="0.013"></testcase>
+</testsuite>
+<testsuite name="JSUtils with real-world jQuery JS code" errors="0" tests="3" failures="0" time="0.196" timestamp="2013-07-23T14:12:53">
+  <testcase classname="JSUtils with real-world jQuery JS code" name="should find the first instance of the pushStack function" time="0.072"></testcase>
+  <testcase classname="JSUtils with real-world jQuery JS code" name="should find all instances of the ready function" time="0.062"></testcase>
+  <testcase classname="JSUtils with real-world jQuery JS code" name="should return an empty array when findAllMatchingSelectors() can&apos;t find any matches" time="0.058"></testcase>
+</testsuite>
+<testsuite name="CSSUtils" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:13:02">
+</testsuite>
+<testsuite name="CSSUtils basics" errors="0" tests="1" failures="0" time="0.004" timestamp="2013-07-23T14:12:53">
+  <testcase classname="CSSUtils basics" name="should parse an empty string" time="0.002"></testcase>
+</testsuite>
+<testsuite name="CSSUtils line offsets" errors="0" tests="3" failures="0" time="0.057" timestamp="2013-07-23T14:12:53">
+  <testcase classname="CSSUtils line offsets" name="should return correct start and end line numbers for simple rules" time="0.013"></testcase>
+  <testcase classname="CSSUtils line offsets" name="should handle rules on adjacent lines" time="0.014"></testcase>
+  <testcase classname="CSSUtils line offsets" name="should return correct group range when selector group spans multiple lines" time="0.024"></testcase>
+</testsuite>
+<testsuite name="CSSUtils with the universal selector" errors="0" tests="2" failures="0" time="0.026" timestamp="2013-07-23T14:12:53">
+  <testcase classname="CSSUtils with the universal selector" name="should match a tag name not referenced anywhere in the CSS" time="0.011"></testcase>
+  <testcase classname="CSSUtils with the universal selector" name="should match a tag name also referenced elsewhere in the CSS" time="0.011"></testcase>
+</testsuite>
+<testsuite name="CSSUtils with sprint 4 exemptions" errors="0" tests="2" failures="0" time="0.052" timestamp="2013-07-23T14:12:53">
+  <testcase classname="CSSUtils with sprint 4 exemptions" name="should match a class selector (right-most only, no pseudo or attr selectors)" time="0.014"></testcase>
+  <testcase classname="CSSUtils with sprint 4 exemptions" name="should match a type selector (can terminate with class name, ID, pseudo or attr selectors)" time="0.036"></testcase>
+</testsuite>
+<testsuite name="CSSUtils with real-world Bootstrap CSS code" errors="0" tests="3" failures="0" time="0.273" timestamp="2013-07-23T14:12:53">
+  <testcase classname="CSSUtils with real-world Bootstrap CSS code" name="should find the first instance of the h2 selector" time="0.107"></testcase>
+  <testcase classname="CSSUtils with real-world Bootstrap CSS code" name="should find all instances of the h2 selector" time="0.086"></testcase>
+  <testcase classname="CSSUtils with real-world Bootstrap CSS code" name="should return an empty array when findAllMatchingSelectors() can&apos;t find any matches" time="0.077"></testcase>
+</testsuite>
+<testsuite name="CSSUtils escapes" errors="0" tests="11" failures="0" time="0.211" timestamp="2013-07-23T14:12:54">
+  <testcase classname="CSSUtils escapes" name="should remove simple backslashes for simple characters" time="0.046"></testcase>
+  <testcase classname="CSSUtils escapes" name="should remove simple backslashes with escaped characters" time="0.012"></testcase>
+  <testcase classname="CSSUtils escapes" name="should parse &apos;\XX &apos; as a single character" time="0.019"></testcase>
+  <testcase classname="CSSUtils escapes" name="should parse &apos;\XXXX &apos; as a single character" time="0.015"></testcase>
+  <testcase classname="CSSUtils escapes" name="should parse &apos;\XXXXXX&apos; as a single character" time="0.015"></testcase>
+  <testcase classname="CSSUtils escapes" name="should not trim end spaces" time="0.017"></testcase>
+  <testcase classname="CSSUtils escapes" name="should detect all combinations" time="0.014"></testcase>
+  <testcase classname="CSSUtils escapes" name="should parse &apos;\AX&apos; as AX" time="0.017"></testcase>
+  <testcase classname="CSSUtils escapes" name="should parse &apos;\AXXX&apos; as AXXX" time="0.015"></testcase>
+  <testcase classname="CSSUtils escapes" name="should replace out of range characters with U+FFFD" time="0.014"></testcase>
+  <testcase classname="CSSUtils escapes" name="should parse everything less does" time="0.014"></testcase>
+</testsuite>
+<testsuite name="CSSUtils findSelectorAtDocumentPos selector groups" errors="0" tests="5" failures="0" time="0.292" timestamp="2013-07-23T14:12:54">
+  <testcase classname="CSSUtils findSelectorAtDocumentPos selector groups" name="should find the selector at a document pos" time="0.061"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos selector groups" name="should return empty string if selection is not in a style rule" time="0.053"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos selector groups" name="should return a comma separated string of all selectors for the rule" time="0.051"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos selector groups" name="should support multiple rules on the same line" time="0.065"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos selector groups" name="should support multiple rules on multiple lines" time="0.057"></testcase>
+</testsuite>
+<testsuite name="CSSUtils findSelectorAtDocumentPos comments" errors="0" tests="3" failures="0" time="0.241" timestamp="2013-07-23T14:12:54">
+  <testcase classname="CSSUtils findSelectorAtDocumentPos comments" name="should ignore rules inside comments" time="0.078"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos comments" name="should find rules adjacent to comments" time="0.072"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos comments" name="should find rules when the position is inside a nested comment" time="0.089"></testcase>
+</testsuite>
+<testsuite name="CSSUtils findSelectorAtDocumentPos pseudo-classes and at-rules" errors="0" tests="3" failures="0" time="0.211" timestamp="2013-07-23T14:12:54">
+  <testcase classname="CSSUtils findSelectorAtDocumentPos pseudo-classes and at-rules" name="should find a simple pseudo selector" time="0.069"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos pseudo-classes and at-rules" name="should find a selector with a preceding at-rule" time="0.057"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos pseudo-classes and at-rules" name="should not find a selector when inside an at-rule" time="0.081"></testcase>
+</testsuite>
+<testsuite name="CSSUtils findSelectorAtDocumentPos complex selectors" errors="0" tests="4" failures="0" time="6.976" timestamp="2013-07-23T14:12:55">
+  <testcase classname="CSSUtils findSelectorAtDocumentPos complex selectors" name="should find pseudo selectors" time="1.587"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos complex selectors" name="should find attribute selectors" time="1.695"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos complex selectors" name="should find structural pseudo-classes" time="1.629"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos complex selectors" name="should find combinators" time="2.059"></testcase>
+</testsuite>
+<testsuite name="CSSUtils findSelectorAtDocumentPos beginning, middle and end of selector" errors="0" tests="4" failures="0" time="0.401" timestamp="2013-07-23T14:13:02">
+  <testcase classname="CSSUtils findSelectorAtDocumentPos beginning, middle and end of selector" name="should find selector when pos is at beginning of selector name" time="0.199"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos beginning, middle and end of selector" name="should find selector when pos is in the middle of selector name" time="0.065"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos beginning, middle and end of selector" name="should find selector when pos is at the end of a selector name" time="0.082"></testcase>
+  <testcase classname="CSSUtils findSelectorAtDocumentPos beginning, middle and end of selector" name="should not find selector when pos is before a selector name" time="0.05"></testcase>
+</testsuite>
+<testsuite name="CSSUtils find correct positions of selectors" errors="0" tests="7" failures="0" time="0.019" timestamp="2013-07-23T14:13:02">
+  <testcase classname="CSSUtils find correct positions of selectors" name="should find selector positions when whitespace between selector and &apos;{&apos;" time="0.002"></testcase>
+  <testcase classname="CSSUtils find correct positions of selectors" name="should find selector positions when no whitespace between selector and &apos;{&apos;" time="0"></testcase>
+  <testcase classname="CSSUtils find correct positions of selectors" name="should find selector positions when &apos;{&apos; on the next line" time="0.002"></testcase>
+  <testcase classname="CSSUtils find correct positions of selectors" name="should find selector positions when &apos;{&apos; on the next line and selector is indented" time="0.001"></testcase>
+  <testcase classname="CSSUtils find correct positions of selectors" name="should find selector positions when &apos;{&apos; on the next line and selector is indented with tabs" time="0.002"></testcase>
+  <testcase classname="CSSUtils find correct positions of selectors" name="should find selector positions in a selector group when &apos;{&apos; on the next line" time="0.001"></testcase>
+  <testcase classname="CSSUtils find correct positions of selectors" name="should find selector positions in a selector group when &apos;{&apos; on the next line and selector group is indented" time="0.002"></testcase>
+</testsuite>
+<testsuite name="CSS Parsing: " errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:13:02">
+</testsuite>
+<testsuite name="CSS Parsing:  Simple selectors: " errors="0" tests="15" failures="0" time="0.104" timestamp="2013-07-23T14:13:02">
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should match a lone type selector given a type" time="0.002"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should match a lone class selector given a class" time="0.002"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should match a lone id selector given an id" time="0.002"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="shouldn&apos;t confuse type, class, and id" time="0.006"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should be case-sensitive for all but types" time="0.005"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should match permissively" time="0.004"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should allow searching conjunctions of type, class, and id" time="0.001"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should match lone &apos;*&apos; given any tag; else ignore" time="0.005"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should ignore pseudo-class selectors" time="0.013"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should ignore pseudo-elements with arguments" time="0.014"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should ignore attribute selectors" time="0.005"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should ignore the content of strings" time="0.013"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="should handle unusual whitespace" time="0.001"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="shouldn&apos;t crash on CSS3 selectors" time="0.012"></testcase>
+  <testcase classname="CSS Parsing:  Simple selectors: " name="shouldn&apos;t crash on CSS Animation syntax (@keyframes)" time="0.002"></testcase>
+</testsuite>
+<testsuite name="CSS Parsing:  Combinators" errors="0" tests="3" failures="0" time="0.017" timestamp="2013-07-23T14:13:02">
+  <testcase classname="CSS Parsing:  Combinators" name="should ignore descendant combinators" time="0.003"></testcase>
+  <testcase classname="CSS Parsing:  Combinators" name="should ignore other combinators" time="0.007"></testcase>
+  <testcase classname="CSS Parsing:  Combinators" name="should find the target of combinators with no whitespace" time="0.001"></testcase>
+</testsuite>
+<testsuite name="CSS Parsing:  Selector groups" errors="0" tests="1" failures="0" time="0.005" timestamp="2013-07-23T14:13:02">
+  <testcase classname="CSS Parsing:  Selector groups" name="should match any item in selector group" time="0.004"></testcase>
+</testsuite>
+<testsuite name="CSS Parsing:  LESS Known Issues" errors="0" tests="4" failures="0" time="0.148" timestamp="2013-07-23T14:13:02">
+  <testcase classname="CSS Parsing:  LESS Known Issues" name="should handle an empty declaration (extra semi-colon)" time="0"></testcase>
+  <testcase classname="CSS Parsing:  LESS Known Issues" name="should handle IE filter syntaxes" time="0"></testcase>
+  <testcase classname="CSS Parsing:  LESS Known Issues" name="should handle unnecessary escape codes" time="0.001"></testcase>
+  <testcase classname="CSS Parsing:  LESS Known Issues" name="should handle comments within properties" time="0.01"></testcase>
+</testsuite>
+<testsuite name="HTMLUtils InlineEditorProviders" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:13:03">
+</testsuite>
+<testsuite name="HTMLUtils InlineEditorProviders Embedded &lt;style&gt; blocks: " errors="0" tests="1" failures="0" time="0.621" timestamp="2013-07-23T14:13:02">
+  <testcase classname="HTMLUtils InlineEditorProviders Embedded &lt;style&gt; blocks: " name="should find style blocks" time="0.619"></testcase>
+</testsuite>
+<testsuite name="CSS Context Info" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:13:05">
+</testsuite>
+<testsuite name="CSS Context Info property names and values" errors="0" tests="19" failures="0" time="1.773" timestamp="2013-07-23T14:13:03">
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_NAME with empty name immediately after rule start brace" time="0.059"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_NAME with empty name immediately before end brace" time="0.079"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_NAME with empty name before whitespace before property name" time="0.07"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_NAME with empty name in middle of whitespace before property name" time="0.054"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_NAME with empty name at end of whitespace in rule with no property name" time="0.07"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_NAME with empty name immediately after semicolon" time="0.06"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_NAME at beginning/middle/end of a simple property name" time="0.056"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_NAME at beginning/middle/end of a hyphenated property name" time="0.053"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with &apos;new value&apos; flag set immediately after colon" time="0.056"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE without &apos;new value&apos; flag set at beginning/middle/end of a simple property value" time="0.075"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with correct values at beginning/middle of first multi-value property" time="0.064"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with &apos;new value&apos; flag set at end of double-quoted multi-value property" time="0.06"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with correct values at beginning/middle of second multi-value property" time="0.065"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with &apos;new value&apos; flag set at end of second multi-value property" time="0.056"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with correct values at beginning/middle/end of third multi-value property" time="0.079"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with &apos;new value&apos; flag and existing values immediately after colon with multi-value property" time="0.058"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with &apos;new value&apos; flag and existing values at end of line after comma (possibly with whitespace)" time="0.073"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should return PROP_VALUE with &apos;new value&apos; flag at end of line when there are no existing values" time="0.087"></testcase>
+  <testcase classname="CSS Context Info property names and values" name="should treat a value like rgba(0, 0, 0, 0) as separate tokens" time="0.082"></testcase>
+</testsuite>
+<testsuite name="CSS Context Info property names and values multi-line cases" errors="0" tests="7" failures="0" time="0.5" timestamp="2013-07-23T14:13:04">
+  <testcase classname="CSS Context Info property names and values multi-line cases" name="should return PROP_VALUE with correct values at beginning/middle of first multi-value multi-line property" time="0.066"></testcase>
+  <testcase classname="CSS Context Info property names and values multi-line cases" name="should return PROP_VALUE with &apos;new value&apos; flag set at end of double-quoted multi-value multi-line property" time="0.057"></testcase>
+  <testcase classname="CSS Context Info property names and values multi-line cases" name="should return PROP_VALUE with correct values at beginning/middle of second multi-value multi-line property" time="0.068"></testcase>
+  <testcase classname="CSS Context Info property names and values multi-line cases" name="should return PROP_VALUE with &apos;new value&apos; flag set at end of second multi-value multi-line property" time="0.059"></testcase>
+  <testcase classname="CSS Context Info property names and values multi-line cases" name="should return PROP_VALUE with correct values at beginning/middle/end of third multi-value multi-line property" time="0.068"></testcase>
+  <testcase classname="CSS Context Info property names and values multi-line cases" name="should return PROP_VALUE with &apos;new value&apos; flag and existing values immediately after colon with multi-value multi-line property" time="0.111"></testcase>
+  <testcase classname="CSS Context Info property names and values multi-line cases" name="should return PROP_VALUE with &apos;new value&apos; flag and existing values at beginning of whitespace before value in multi-line property" time="0.064"></testcase>
+</testsuite>
+<testsuite name="CSS Context Info quoting" errors="0" tests="2" failures="0" time="0.224" timestamp="2013-07-23T14:13:05">
+  <testcase classname="CSS Context Info quoting" name="should properly parse a value with single quotes" time="0.104"></testcase>
+  <testcase classname="CSS Context Info quoting" name="should properly parse values with special characters" time="0.118"></testcase>
+</testsuite>
+<testsuite name="CSS Context Info invalid contexts" errors="0" tests="4" failures="0" time="0.273" timestamp="2013-07-23T14:13:05">
+  <testcase classname="CSS Context Info invalid contexts" name="should return empty context for a non-css document" time="0.092"></testcase>
+  <testcase classname="CSS Context Info invalid contexts" name="should return empty context for unsupported context" time="0.069"></testcase>
+  <testcase classname="CSS Context Info invalid contexts" name="should return empty context for comment" time="0.054"></testcase>
+  <testcase classname="CSS Context Info invalid contexts" name="should return empty context for comment in declaration" time="0.053"></testcase>
+</testsuite>
+<testsuite name="HTML Instrumentation" errors="0" tests="0" failures="0" time="0" timestamp="2013-07-23T14:13:10">
+</testsuite>
+<testsuite name="HTML Instrumentation HTML Instrumentation in wellformed HTML" errors="0" tests="10" failures="0" time="1.478" timestamp="2013-07-23T14:13:05">
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="should instrument all start tags except some empty tags" time="0.479"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="should have created cache and never call document.getText() again" time="0.097"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="should have recreated cache when document timestamp is different" time="0.111"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="should get &apos;img&apos; tag for cursor positions inside img tag." time="0.108"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="should get the parent &apos;a&apos; tag for cursor positions between &apos;img&apos; and its parent &apos;a&apos; tag." time="0.115"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="No tag at cursor positions outside of the &apos;html&apos; tag" time="0.114"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="Should get parent tag (body) for all cursor positions inside an html comment" time="0.107"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="should get &apos;meta/link&apos; tag for cursor positions in meta/link tags, not &apos;head&apos; tag" time="0.097"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="Should get &apos;title&apos; tag at cursor positions (either in the content or begin/end tag)" time="0.106"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in wellformed HTML" name="Should get &apos;h2&apos; tag at cursor positions (either in the content or begin or end tag)" time="0.135"></testcase>
+</testsuite>
+<testsuite name="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" errors="0" tests="16" failures="0" time="1.319" timestamp="2013-07-23T14:13:07">
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should instrument all start tags except some empty tags" time="0.062"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;p&apos; tag for cursor positions before the succeding start tag of an unclosed &apos;p&apos; tag" time="0.09"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;h1&apos; tag for cursor positions inside &apos;h1&apos; that is following an unclosed &apos;p&apos; tag." time="0.111"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;wbr&apos; tag for cursor positions inside &lt;wbr&gt;, not its parent &apos;h1&apos; tag." time="0.093"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;li&apos; tag for cursor positions inside the content of an unclosed &apos;li&apos; tag" time="0.076"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;br&apos; tag for cursor positions inside &lt;br&gt;, not its parent &apos;li&apos; tag" time="0.065"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;ul&apos; tag for cursor positions within &apos;ul&apos; but outside of any unclosed &apos;li&apos;." time="0.062"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;table&apos; tag for cursor positions that are not in any unclosed child tags" time="0.088"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;input&apos; tag for cursor positions inside one of the &apos;input&apos; tags." time="0.079"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;option&apos; tag for cursor positions in any unclosed &apos;option&apos; tag." time="0.076"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should NOT get &apos;option&apos; tag for cursor positions in the parent tags of an unclosed &apos;option&apos;." time="0.082"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;label&apos; tag for cursor positions in the &apos;label&apos; tag or its content." time="0.11"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;form&apos; tag for cursor positions NOT in any form element." time="0.061"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;hr&apos; tag for cursor positions in &lt;hr&gt; tag, not its parent &lt;form&gt; tag." time="0.061"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;script&apos; tag for cursor positions anywhere inside the tag including CDATA." time="0.073"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in valid but not wellformed HTML" name="should get &apos;footer&apos; tag that is explicitly using all uppercase tag names." time="0.116"></testcase>
+</testsuite>
+<testsuite name="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" errors="0" tests="15" failures="0" time="1.917" timestamp="2013-07-23T14:13:08">
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should instrument all start tags except some empty tags" time="0.084"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;script&apos; tag for cursor positions anywhere inside the tag including CDATA." time="0.087"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;style&apos; tag for cursor positions anywhere inside the tag including CDATA." time="0.086"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;i&apos; tag for cursor positions before &lt;/b&gt;, inside &lt;/b&gt; and after &lt;/b&gt;." time="0.083"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;body&apos; tag in a paragraph that has missing &lt;p&gt; tag, but has &lt;/p&gt;" time="0.087"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;hr&apos; tag for cursor positions in any forms of &lt;hr&gt; tag" time="0.086"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;h2&apos; tag for cursor positions between &lt;wbr&gt; and its invalide end tag." time="0.142"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;wbr&apos; tag for cursor positions inside &lt;wbr&gt;, not its parent &lt;h2&gt; tag." time="0.138"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;h2&apos; tag for cursor positions inside invalid &lt;/wbr&gt; tag." time="0.088"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;name&apos; tag for cursor positions before &lt;name&gt; and &lt;/name&gt;." time="0.077"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;th&apos; tag for cursor positions in any &apos;th&apos; and their text contents." time="0.102"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;input&apos; tag for cursor positions in any input tag." time="0.081"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;form&apos; tag for cursor positions in any invalid end tag inside the form." time="0.592"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;p&apos; tag for cursor positions inside an unclosed paragraph nested in a link." time="0.081"></testcase>
+  <testcase classname="HTML Instrumentation HTML Instrumentation in an HTML page with some invalid markups" name="should get &apos;a&apos; tag for cursor positions not in the unclosed &apos;p&apos; child tag." time="0.088"></testcase>
+</testsuite>
+<testsuite name="HTML Instrumentation HTML Instrumentation in dirty files" errors="0" tests="1" failures="0" time="0.112" timestamp="2013-07-23T14:13:10">
+  <testcase classname="HTML Instrumentation HTML Instrumentation in dirty files" name="should re-instrument after document is dirtied" time="0.11"></testcase>
+</testsuite>
+</testsuites>
